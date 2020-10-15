@@ -23,3 +23,10 @@
 - pyright
 - Settings Sync
 - Vim
+
+# setup vs code .ssh/osconfig 
+- Host python3-cloud
+  - User cloud_user
+  - HostName 7938ac48b61c.mylabserver.com
+  - IdentityFile "C:\Users\audiophile\.ssh\id_rsa-remote-ssh"
+  - LocalForward 127.0.0.1:8080 127.0.0.1:8080
