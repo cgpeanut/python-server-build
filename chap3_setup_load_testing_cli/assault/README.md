@@ -28,3 +28,27 @@ If we want to add concurency we'll use the '-c' option and we can use the '-r' o
 that we's like to make:
 
 $ assault -r 3000 -c 10 http://example.com
+
+If you like to see these results in JSON then you can use the '-j' option with a path to an JSON file:
+...
+$ assault -r 3000 -c 10 -i output.json https://example.com
+...Done!
+...
+
+## developement 
+For working on assault, you'll need to have python >= 3.7 (because we'll use 'asyncio') and ['pipenv'][1]
+installed. With those installed, run the following command to create a virtualenv for the project and fetch
+the dependencies:
+...
+$ pipenv install --dev
+...
+...
+
+Frome there, activate the virtualenv and get to work:
+...
+$ pipenv shell
+...
+(assault) $
+...
+
+[1]: https://docs.pipennv.org/en/latest/
