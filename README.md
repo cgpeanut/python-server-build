@@ -25,12 +25,12 @@
 - Vim
 
 - add to .ssh/config (local)
-Host python3-cloud
-  User cloud_user
-  HostName 7938ac48b61c.mylabserver.com
-  IdentityFile "C:\Users\audiophile\.ssh\id_rsa-remote-ssh"
-  LocalForward 127.0.0.1:8080 127.0.0.1:8080
-Host python-server
-  User rroxas
-  HostName python-server
-  IdentityFile "C:\Users\audiophile\.ssh\id_rsa-remote-ssh
+- Host python3-cloud
+  -User cloud_user
+  -HostName 7938ac48b61c.mylabserver.com
+  -IdentityFile "C:\Users\audiophile\.ssh\id_rsa-remote-ssh"
+  -LocalForward 127.0.0.1:8080 127.0.0.1:8080
+-Host python-server
+  -User rroxas
+  -HostName python-server
+  -IdentityFile "C:\Users\audiophile\.ssh\id_rsa-remote-ssh
