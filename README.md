@@ -10,3 +10,7 @@
 
 - ./configure --enable-optimizations --with-ensurepip=install
 - make altinstall  
+- sudo /usr/local/bin/pip3.7 install --upgrade pip
+
+- sudo cat /etc/sudoers | grep secure_path
+- add /usr/local/bin
