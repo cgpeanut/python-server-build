@@ -14,3 +14,12 @@
 
 - sudo cat /etc/sudoers | grep secure_path
 - add /usr/local/bin
+
+# setup VS Code for Remote SSH to cloud VM
+- install VS code 
+- install 3 VS code extensions
+- remote development extension
+- python
+- pyright
+- Settings Sync
+- Vim
