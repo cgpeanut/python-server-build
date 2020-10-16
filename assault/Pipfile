@@ -5,8 +5,14 @@ verify_ssl = true
 
 [dev-packages]
 twine = "*"
+black = "*"
+pylint = "*"
 
 [packages]
+click = "*"
 
 [requires]
 python_version = "3.7"
+
+[pipenv]
+allow_prereleases = true
