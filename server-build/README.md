@@ -26,6 +26,11 @@ $ pyright
 $ Settings Sync
 $ Vim
 
+# pipenv crash course 
+# set ssh
+$ ssh-keygen -t rsa -b 4096 -C "robertoruizroxas@gmail.com" -f ~/.ssh/id_rsa-remote-ssh
+$ ssh-copy-id -i ~/.ssh/id_rsa-remote-ssh.pub cloud_user@robertoruizroxas.mylabserver.com
+
 # setup vs code .ssh/osconfig 
 - Host python3-cloud
   - User cloud_user
@@ -42,4 +47,21 @@ $ Vim
   - User rroxas
   - HostName python-server
   - IdentityFile "C:\Users\audiophile\.ssh\id_rsa-remote-ssh
-...
+
+# modularized python setup basics
+- create main and module directory in vs code
+  - mkdir -p assault/assault 
+  - inside assault create README.md (describe your module)
+  - 
+
+# developement 
+- for working on assault, you'll need to have Python >=3.7 (because 'asyncio') and ['pipenv']
+- $ pipenv install --dev
+- $ pipenv shell (activate shell)
+
+# download setup.py and .gitignore
+- $ cd assault
+- $ curl -O https://github.com/cgpeanut/python-server-build/blob/main/assault/setup.py
+- $ curl -O https://github.com/navdeep-G/setup.py/blob/master/setup.py (untouched)
+- $ cure -o https://github.com/github/gitignore/blob/master/Python.gitignore
+
