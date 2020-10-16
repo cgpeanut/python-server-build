@@ -65,3 +65,25 @@ $ ssh-copy-id -i ~/.ssh/id_rsa-remote-ssh.pub cloud_user@robertoruizroxas.mylabs
 - $ curl -O https://github.com/navdeep-G/setup.py/blob/master/setup.py (untouched)
 - $ cure -o https://github.com/github/gitignore/blob/master/Python.gitignore
 
+# configuring project in vs code  
+- .vscode 
+- settings.json
+  - {
+  -  "python.linting.enabled": true,
+  -  "editor.formatOnSave": true,
+  -  "python.formatting.provider": "black"
+}
+
+# enable pylint
+- shift+ctrl+p -> pylint:on
+
+# arparse and click 
+- $ cd assault
+- $ pipenv install click
+
+# What packages are required for this module to be executed?
+- REQUIRED = ["click"]
+
+
+
+
